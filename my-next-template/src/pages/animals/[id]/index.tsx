@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { BigButton } from '../../../components/button/BigButton';
+import { useState } from 'react';
+import { BigButton } from '../../../components/buttons/BigButton';
 import { Animal } from '../../../models/Animal';
 import { GetAnimal } from '../../../utils/api/animals/GetAnimal';
 
