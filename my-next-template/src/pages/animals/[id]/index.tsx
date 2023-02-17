@@ -6,14 +6,21 @@ import { Animal } from '../../../models/Animal';
 import { GetAnimal } from '../../../utils/api/animals/GetAnimal';
 
 const Animals: NextPage = () => {
-  const [animal, setAnimal] = useState<Animal>();
+  const [animal, setAnimal] = useState<Animal | void>();
   const router = useRouter();
 
-  const getAnimalInfo = (id: string) => {
+  const getAnimalInfo = async (id: string) => {
+
+    
+    let animal: Animal | void;
+
     if (typeof router.query.id === 'string') {
-      GetAnimal(router.query.id).then((response: any) => {
-        setAnimal(response.data);
+      animal = await GetAnimal(router.query.id).then((response: any) => {
+        return response.data;
       });
+
+      console.log('animal->', animal);
+      setAnimal(animal);
     }
   };
 

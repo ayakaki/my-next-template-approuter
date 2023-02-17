@@ -1,6 +1,6 @@
 import { myAxiosInstance } from './MyAxiosInstance';
 
-export const GetCall = (url: string, params?: object) => {
+export const GetCall = async (url: string, params?: object) => {
   url = params ? `${url}?${params}` : url;
 
   return myAxiosInstance
@@ -9,6 +9,7 @@ export const GetCall = (url: string, params?: object) => {
       url: url,
     })
     .catch((error) => {
+      console.log(error);
       return false;
     });
 };
