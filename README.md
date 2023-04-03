@@ -19,7 +19,8 @@ Next.js でプロジェクトを立ち上げる際のテンプレート
 
 `package.json` 記載のプロジェクト名を変更
 
-## APPENDIX
+## PLAN TO DO
 
 - `.vscode/setting.json`によるワークスペースごとの強制設定
+- eslint
 - 状態管理を recoil で行う予定
