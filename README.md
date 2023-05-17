@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## コミットルール
 
-## Getting Started
+コミットは下記のコミット単位に対応する単位を最大とし、コミットすること
 
-First, run the development server:
+### コミットメッセージ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+コミットメッセージは `[シンボル]要約`の通りに記載する。<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+【例】 🐛 削除フラグが更新されない不具合の修正
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### コミット単位
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+※原則： [gitmoji.dev/](https://gitmoji.dev/)
 
-## Learn More
+| シンボル | コミット単位                             |
+| :------: | ---------------------------------------- |
+|    ✨    | 新機能追加                               |
+|    🐛    | バグ修正                                 |
+|    📝    | ドキュメントのみの変更                   |
+|    🎨    | コードの動作に影響しない見た目だけの変更 |
+|    ♻️    | リファクタリング                         |
+|   ⚡️    | パフォーマンス改善                       |
+|    ✅    | 成功するテスト追加や修正                 |
+|    🧪    | 失敗するテスト追加や修正                 |
+|    🔧    | 補助ツールやライブラリの変更             |
+|    🎉    | 初めてのコミット                         |
+|    🍱    | assets の追加・アップデート              |
+|    🙈    | .gitignore のアップデート                |
+|    ✏️    | タイポ修正                               |
+|    🚧    | WIP（Work In Progress）                  |
 
-To learn more about Next.js, take a look at the following resources:
+## 命名規則
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- ディレクトリ名：キャメルケース
+- ファイル名：キャメルケース
+  - React.FC のみファイル拡張子は.tsx。その他は.ts（設定ファイルは除く）
+- メソッド名：キャメルケース（jsx ファイルの React.FC のみパスカルケース）
+- 変数名：キャメルケース
