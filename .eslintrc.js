@@ -15,5 +15,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
   },
-  ignorePatterns: ['.eslintrc.js', 'next.config.js'], // 解析対象からの除外
+  ignorePatterns: [
+    '.eslintrc.js',
+    'next.config.js',
+    'tailwind.config.js',
+    'jest.config.js',
+  ], // 解析対象からの除外
 };
