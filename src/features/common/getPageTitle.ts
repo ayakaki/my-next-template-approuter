@@ -1,5 +1,5 @@
-import { SITE_TITEL } from '@/consts/meta';
 import { isString } from './typeGuards';
+import { SITE_TITEL } from '@/constants/meta';
 
 export const getPageTitle = (title?: string): string => {
   if (isString(title)) {
