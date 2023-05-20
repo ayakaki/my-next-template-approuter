@@ -1,6 +1,7 @@
 'use client';
+
 import { useTodo } from '@/hooks/useTodo';
-import { type Todo } from '@/models/todo';
+import { type Todo } from '@/types/todo';
 import { type FC } from 'react';
 
 type Props = {
