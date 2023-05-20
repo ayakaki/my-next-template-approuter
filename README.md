@@ -1,8 +1,4 @@
-<div style="text-align: center; font-size: 32px; font-weight: bold">
-🚧 under development 🚧
-</div>
-
-# my-next-template-approuter
+# 🚧 under development 🚧
 
 approuter の Next.js アプリケーションを立ち上げる際のテンプレートプロジェクト
 
