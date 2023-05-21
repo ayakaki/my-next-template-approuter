@@ -1,4 +1,4 @@
-import { axiosFetcher } from '@/libs/axiosFetcher';
+import { fetcher } from '@/features/common/fetcher';
 import useSWR from 'swr';
 
 export const useTodo = <T>(
@@ -7,7 +7,7 @@ export const useTodo = <T>(
 ): T | null => {
   const { data, error } = useSWR<T>(
     `/todos/${id}?isFavorite=${favoriteCount}`,
-    axiosFetcher
+    fetcher
   );
 
   // エラーが発生した場合は例外を投げる
