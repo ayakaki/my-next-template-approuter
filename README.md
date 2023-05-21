@@ -1,4 +1,4 @@
-# 🚧 under development 🚧
+# my-next-template-approuter
 
 approuter の Next.js アプリケーションを立ち上げる際のテンプレートプロジェクト
 
@@ -7,11 +7,10 @@ approuter の Next.js アプリケーションを立ち上げる際のテンプ�
 仮置きで下記のパッケージを使用。
 
 - HTTP ライブラリ：Axios
-- 状態管理：recoil
+- 状態管理ライブラリ：jotai
 - テスティングフレームワーク：Jest
 - CSS フレームワーク：Tailwind CSS
 
 ## 🚧 TODO
 
-- 状態管理
 - Storybook
