@@ -8,5 +8,7 @@ export const fetcher = async <T>(pathname: string): Promise<T> => {
 
   const endpoint = hostname + pathname;
 
-  return await fetch(endpoint).then((res) => res.json() as T);
+  return await fetch(endpoint, { next: { revalidate: 10 } }).then(
+    (res) => res.json() as T
+  );
 };
