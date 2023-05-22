@@ -1,6 +1,6 @@
 # my-next-template-approuter
 
-approuter の Next.js アプリケーションを立ち上げる際のテンプレートプロジェクト
+App Router の Next.js アプリケーションを立ち上げる際のテンプレートプロジェクト
 
 ## FEATURE
 
