@@ -6,7 +6,7 @@ export const useTodo = <T>(
   favoriteCount: number
 ): T | null => {
   const { data, error } = useSWR<T>(
-    `/todos/${id}?isFavorite=${favoriteCount}`,
+    `/todos/${id}?favorite-count=${favoriteCount}`,
     fetcher
   );
 
