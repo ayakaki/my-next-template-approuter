@@ -1,4 +1,4 @@
-export const SITE_TITEL = 'My Next Tempalte';
+export const SITE_TITLE = 'My Next Template';
 
 export const PAGE_METAS = {
   HOME: {
